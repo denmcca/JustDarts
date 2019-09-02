@@ -7,6 +7,7 @@ package JustDarts;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import javax.sound.sampled.*;
 
 import JustDarts.components.*;
@@ -21,6 +22,7 @@ import JustDarts.managers.*;
  */
 public class DartsPanel extends JPanel
 {
+
     private boolean doThrow = false;
     private int IMAGE_SCALE = Math.round((float)Main.WIDTH/640f);
 
@@ -167,6 +169,8 @@ public class DartsPanel extends JPanel
 
         setPreferredSize (new Dimension(width, height));
         setBackground(Color.white);
+
+        toggleCursor();
     }
 
     private void go(Graphics g) {
@@ -245,6 +249,7 @@ public class DartsPanel extends JPanel
 
         if (endGameFirstPass & endGame) {
             endGameFirstPass = false;
+            toggleCursor();
             updateHighestScore();
             ((Button)getGameObject(GameObjectNames.QUIT)).enableDraw();
             ((Button)getGameObject(GameObjectNames.RESTART)).enableDraw();
@@ -477,6 +482,7 @@ public class DartsPanel extends JPanel
     }
 
     private void gameReset() {
+        toggleCursor();
         attemptsMade = 0;
         System.out.println("resetting values");
         playerScore = 0;
@@ -510,4 +516,16 @@ public class DartsPanel extends JPanel
 //            highScore = playerScore;
 //        }
 //    }
+
+    private void toggleCursor() {
+        Toolkit t = Toolkit.getDefaultToolkit();
+        Image i = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
+        Cursor noCursor = t.createCustomCursor(i, new Point(0, 0), "none");
+        if (getCursor() == Cursor.getDefaultCursor()) {
+            setCursor(noCursor);
+        }
+        else {
+            setCursor(Cursor.getDefaultCursor());
+        }
+    }
 }

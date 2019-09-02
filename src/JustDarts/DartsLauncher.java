@@ -46,8 +46,8 @@ class DartsLauncher {
         dartFrame.setPreferredSize(new Dimension(windowWidth, windowHeight));
         dartFrame.setResizable(false);
         dartFrame.setSize(windowWidth, windowHeight);
-//        dartFrame.setCursor(noCursor);
-        dartFrame.setCursor(Cursor.CROSSHAIR_CURSOR);
+        dartFrame.setCursor(noCursor);
+//        dartFrame.setCursor(Cursor.CROSSHAIR_CURSOR);
         dartFrame.setLocation(windowPositionX, windowPositionY);
 //        System.out.print("width = " + (dartFrame.getWidth()) / 2 + " height = " + (Main.dim.height - dartFrame.getHeight()) / 2);
         DartsPanel dartsPanel = new DartsPanel();
