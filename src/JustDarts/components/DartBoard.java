@@ -10,6 +10,8 @@ import java.util.Arrays;
 public class DartBoard extends Drawable {
     private int turnScore;
     private int scoreMultiplier;
+    private boolean wasBoardHit;
+    private boolean wasWayOff;
     public DartBoard() {
         imgBaseDim = new Dimension(144,144); // set dims using modifiers
         frameIndexSequence.addAll(Arrays.asList(0));
@@ -19,12 +21,24 @@ public class DartBoard extends Drawable {
         init();
     }
     @Override
-    protected void init() {}
+    protected void init() {
+        wasBoardHit = false;
+        wasWayOff = false;
+    }
 
     @Override
-    public void update() {}
+    public void update() {
+        wasBoardHit = false;
+        wasWayOff = false;
+    }
 
-    public int findScore(int dartPosX, int dartPosY) {
+    public boolean wasBoardHit() {
+        return wasBoardHit;
+    }
+
+
+
+    public void findScore(int dartPosX, int dartPosY) {
         int radius = getWidth() / 2;
         int dartDistanceFromCenterX = dartPosX - WINDOW_SIZE.width / 2; // keep for clarity
         int dartDistanceFromCenterY = WINDOW_SIZE.height / 2 - dartPosY; // reverse y-axis values
@@ -35,20 +49,23 @@ public class DartBoard extends Drawable {
         int distanceToLayer6InsidePerimeter = radius * 78 / 100;
         int distanceToLayer4InsidePerimeter = radius * 48 / 100;
 
-        int distance = (int)getDistanceFromBullseye(dartDistanceFromCenterX, dartDistanceFromCenterY);
+        int distance = (int) getDistanceFromBullsEye(dartDistanceFromCenterX, dartDistanceFromCenterY);
 
         if (distance > radius || distance < 0) { // negative: bit overflow
             if (distance > (radius * 10) || distance < 0) {
-                SoundManager.getInstance().playSound(DartsPanel.AudioIndex.TERRIBLE.ordinal());
+//                SoundManager.getInstance().playSound(DartsPanel.AudioIndex.TERRIBLE.ordinal());
+                SoundManager.getInstance().setSoundToPlay(Sounds.TERRIBLE.getValue());
+                wasWayOff = true;
             }
             else {
-                SoundManager.getInstance().playSound(DartsPanel.AudioIndex.WOOD_PLASTIC_IMPACT.ordinal());
+                SoundManager.getInstance().setSoundToPlay(Sounds.WOOD_PLASTIC_IMPACT.getValue());
             }
             turnScore = 0;
             scoreMultiplier = 0;
         } else {
-            System.out.printf("distance: %d boardWidth: %d\n", distance, getWidth());
-            SoundManager.getInstance().playSound(DartsPanel.AudioIndex.WOODEN_IMPACT.ordinal());
+            wasBoardHit = true;
+//            SoundManager.getInstance().playSound(DartsPanel.AudioIndex.WOODEN_IMPACT.ordinal());
+            SoundManager.getInstance().setSoundToPlay(Sounds.WOODEN_IMPACT.getValue());
             if (distance < distanceToLayer3InsidePerimeter) {
                 scoreMultiplier = 1;
                 if (distance < distanceToLayer2InsidePerimeter) {
@@ -84,8 +101,9 @@ public class DartBoard extends Drawable {
                 }
             }
         }
-        return turnScore * scoreMultiplier;
     }
+
+
 
     private int findAngleScore(int _dartPosX, int _dartPosY, float angle) {
         int xIn = _dartPosX - WINDOW_SIZE.width / 2;
@@ -206,13 +224,13 @@ public class DartBoard extends Drawable {
         return turnScore;
     }
 
-    private double getDistanceFromBullseye(int dartPosX, int dartPosY) {
+    private double getDistanceFromBullsEye(int dartPosX, int dartPosY) {
         return Math.sqrt(dartPosX * dartPosX + dartPosY * dartPosY);
     }
 
     private float findAngle(int _dartPosX, int _dartPosY) {
-        double yIn = WINDOW_SIZE.height / 2 - (double)_dartPosY;
-        double xIn = (double)_dartPosX - WINDOW_SIZE.width / 2;
+        double yIn = WINDOW_SIZE.height / 2f - (double)_dartPosY;
+        double xIn = (double)_dartPosX - WINDOW_SIZE.width / 2f;
 
         return (float)Math.toDegrees(Math.atan2(yIn, xIn)); // y , x
     }

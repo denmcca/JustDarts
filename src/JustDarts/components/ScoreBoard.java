@@ -51,10 +51,13 @@ public class ScoreBoard extends Drawable {
     }
 
     public void updateScore(int score) {
-        System.out.println("score: "+ score);
         this.score += score;
-        if (score > highScore)
-            highScore = score;
+        if (this.score > highScore)
+            highScore = this.score;
+    }
+
+    public int getHighScore() {
+        return highScore;
     }
 
     public void setShouldTransition(boolean shouldTransition) {

@@ -15,6 +15,13 @@ public class WhiteOut extends Drawable {
         init();
     }
 
+    public void compareHighScore(int score) {
+        if (highScore < score) {
+            highScore = score;
+            // player would be update here
+        }
+    }
+
     @Override
     public void draw(JPanel p, Graphics g) {
         if (!shouldDraw) return;

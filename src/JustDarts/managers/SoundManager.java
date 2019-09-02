@@ -1,12 +1,16 @@
 package JustDarts.managers;
 
+import JustDarts.components.Sound;
+import JustDarts.components.SoundEffect;
+import JustDarts.components.SoundPlayer;
+
 import javax.sound.sampled.*;
-import java.io.File;
 import java.util.HashMap;
 
 public class SoundManager {
     private static SoundManager instance;
-    private HashMap<Integer, Clip> soundMap;
+    private HashMap<String, Sound> soundMap;
+    public static final String PATH_TO_DIR = "audio/";
     private SoundManager() {
         init();
     }
@@ -20,16 +24,15 @@ public class SoundManager {
         soundMap = new HashMap<>();
     }
 
-    public void addSound(Integer key, Clip clip) {
-        soundMap.put(key, clip);
+    public void addSound(Sound sound) {
+        soundMap.put(sound.getPath(), sound);
     }
 
     public void removeSound(Integer key) {
         soundMap.remove(key);
     }
 
-    public boolean playSound(Integer key) {
-        Clip clip = soundMap.get(key);
+    private boolean playSound(Clip clip) {
         clip.flush();
         if (clip == null) {
             System.out.println("Error: No such audio clip found in the Sound Manager");
@@ -40,40 +43,22 @@ public class SoundManager {
         return true;
     }
 
-    public Clip createAudioClip(String path)
-    {
-        String audioDir = "audio/";
-        Clip clip = null;
+    public void setSoundToPlay(String path) {
         try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(
-                    new File(audioDir + path).getAbsoluteFile());
-            AudioFormat format = audioInputStream.getFormat();
-            DataLine.Info info = new DataLine.Info(Clip.class, format);
-            clip = (Clip)AudioSystem.getLine(info);
-            clip.open(audioInputStream);
-        } catch(Exception ex) {
-            System.out.println("Error opening Audio Input Stream");
-            ex.printStackTrace();
+            soundMap.get(path).setShouldPlay(true);
         }
-        return clip;
+        catch (Exception e) {
+            addSound(new SoundEffect(PATH_TO_DIR + path));
+            soundMap.get(PATH_TO_DIR + path).setShouldPlay(true);
+        }
     }
 
-    // used to play each sound in a separate thread
-    private class SoundPlayer implements Runnable {
-        Clip clip;
-        public SoundPlayer(Clip clip) {
-            this.clip = clip;
-            this.clip.start();
-        }
-
-        public void run() {
-            try {
-                Thread.sleep(clip.getMicrosecondLength() / 1000);
-                clip.stop();
-                clip.setFramePosition(0);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+    public void playSounds() {
+        soundMap.values().forEach(sound -> {
+            if (sound.shouldPlay()) {
+                playSound(sound.getClip());
+                sound.setShouldPlay(false);
             }
-        }
+        });
     }
 }

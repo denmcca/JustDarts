@@ -38,6 +38,8 @@ public class Hand extends Drawable {
     @Override
     public void update() {
         setPosition(inputManager.getMousePos());
+
+        if (aSeq == AnimationSequence.THROWING | aSeq == AnimationSequence.IDLE)
         frameDelay += TimeManager.getInstance().getDeltaTime() / 1000f;
 //        System.out.println(frameDelay);
         switch (aSeq) {

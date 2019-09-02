@@ -2,44 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30d9b7af-7952-4532-9898-13b88b04aa81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/AimBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/Button.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/Dart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/DartBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/FlowBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/Hand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/HiScoreText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/PowerBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/QuitButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/RestartButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/ScoreBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/ScorePop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/ScoreText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/Sound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/Tutorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/TutorialButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/Wall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/WhiteOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/interfaces/Drawable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/interfaces/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/managers/GameObjectManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/managers/InputManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/managers/RenderManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/managers/SceneManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/managers/SoundManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JustDarts/managers/TimeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JustDarts/components/SoundPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JustDarts/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JustDarts/Check.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JustDarts/CheckOptionsPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JustDarts/CheckingAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JustDarts/JustDarts/img/Untitled.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JustDarts/JustDarts/img/aimBar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JustDarts/JustDarts/img/circle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JustDarts/JustDarts/img/circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JustDarts/JustDarts/img/help.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JustDarts/JustDarts/img/meter_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JustDarts/JustDarts/img/tutorial1.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JustDarts/JustDarts/img/tutorial2.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JustDarts/JustDarts/img/tutorial3.xcf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JustDarts/DartsLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/DartsLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JustDarts/DartsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/DartsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JustDarts/Deposit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JustDarts/JFrameL.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JustDarts/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JustDarts/ServiceCharge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JustDarts/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/components/DartBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/components/DartBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/components/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/components/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/components/HiScoreText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/components/SoundEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/components/ScoreBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/components/ScoreBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/components/ScoreText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/components/Sounds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/components/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/components/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/components/WhiteOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/components/WhiteOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/img/Untitled.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/img/aimBar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/img/circle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/img/circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/img/help.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/img/meter_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/img/tutorial1.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/img/tutorial2.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/img/tutorial3.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JustDarts/managers/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JustDarts/managers/SoundManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,36 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JustDarts/DartsPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#15637#15885#0" />
-                <element signature="e#16519#17362#0" />
-                <element signature="e#19424#19425#0" expanded="true" />
-                <element signature="e#20639#20701#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JustDarts/components/PowerBar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-              <folding>
-                <element signature="e#1889#1890#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JustDarts/components/FlowBar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="78">
+              <caret line="247" column="33" selection-start-line="247" selection-start-column="33" selection-end-line="247" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,25 +56,56 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JustDarts/components/AimBar.java">
+        <entry file="file://$PROJECT_DIR$/src/JustDarts/components/ScorePop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            <state relative-caret-position="300">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JustDarts/components/DartBoard.java">
+        <entry file="file://$PROJECT_DIR$/src/JustDarts/components/WhiteOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="97" column="38" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="38" />
+            <state relative-caret-position="196">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8033#8034#0" expanded="true" />
-                <element signature="e#8065#8066#0" expanded="true" />
-                <element signature="e#8108#8109#0" expanded="true" />
-                <element signature="e#8146#8147#0" expanded="true" />
+                <element signature="e#1263#1264#0" expanded="true" />
+                <element signature="e#1770#1771#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JustDarts/components/ScoreBoard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1567#1568#0" expanded="true" />
+                <element signature="e#1598#1599#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/SoundManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,19 +114,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Hand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            <state relative-caret-position="-340">
+              <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#971#972#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#2069#2070#0" expanded="true" />
                 <element signature="e#2091#2092#0" expanded="true" />
-                <element signature="e#2267#2268#0" expanded="true" />
-                <element signature="e#2323#2324#0" expanded="true" />
-                <element signature="e#2535#2536#0" expanded="true" />
-                <element signature="e#2588#2589#0" expanded="true" />
+                <element signature="e#2691#2692#0" expanded="true" />
                 <element signature="e#2740#2741#0" expanded="true" />
+                <element signature="e#2806#2807#0" expanded="true" />
                 <element signature="e#2832#2833#0" expanded="true" />
+                <element signature="e#2887#2888#0" expanded="true" />
                 <element signature="e#2914#2915#0" expanded="true" />
               </folding>
             </state>
@@ -140,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JustDarts/interfaces/Drawable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="105">
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,13 +144,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/TimeManager.java">
+        <entry file="file://$PROJECT_DIR$/src/JustDarts/interfaces/GameObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="105">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#684#685#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#920#921#0" expanded="true" />
+                <element signature="e#1432#1433#0" expanded="true" />
+                <element signature="e#1467#1468#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,20 +162,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Sound.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#190#191#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#990#991#0" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#1150#1151#0" expanded="true" />
+                <element signature="e#1211#1212#0" expanded="true" />
+                <element signature="e#1254#1255#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#955#956#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JustDarts/DartsLauncher.java">
+        <entry file="file://$PROJECT_DIR$/src/JustDarts/components/DartBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+            <state relative-caret-position="510">
+              <caret line="60" column="97" selection-start-line="60" selection-start-column="97" selection-end-line="60" selection-end-column="97" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#DartsLauncher#0" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,13 +204,12 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gameObjectManager.add</find>
-      <find>popscore</find>
       <find>reset</find>
       <find>testing</find>
       <find>((Hand)</find>
@@ -222,10 +234,12 @@
       <find>Lock</find>
       <find>disableFlowLock</find>
       <find>frameD</find>
-      <find>aimCircle</find>
-      <find>System.out.print</find>
       <find>frameDelay</find>
       <find>power</find>
+      <find>System.out.print</find>
+      <find>updatescore</find>
+      <find>aimCircle</find>
+      <find>Top</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,38 +251,42 @@
         <option value="$PROJECT_DIR$/src/JustDarts/CheckingAccount.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/managers/Manager.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/managers/SceneManager.java" />
-        <option value="$PROJECT_DIR$/src/JustDarts/managers/SoundManager.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/Button.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/TutorialButton.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/QuitButton.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/RestartButton.java" />
-        <option value="$PROJECT_DIR$/src/JustDarts/Main.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/Wall.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/managers/RenderManager.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/managers/InputManager.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/interfaces/GameObject.java" />
-        <option value="$PROJECT_DIR$/src/JustDarts/components/WhiteOut.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/managers/GameObjectManager.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/Tutorial.java" />
-        <option value="$PROJECT_DIR$/src/JustDarts/DartsLauncher.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/Dart.java" />
-        <option value="$PROJECT_DIR$/src/JustDarts/components/ScoreBoard.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/ScorePop.java" />
-        <option value="$PROJECT_DIR$/src/JustDarts/components/DartBoard.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/managers/TimeManager.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/interfaces/Drawable.java" />
-        <option value="$PROJECT_DIR$/src/JustDarts/components/Hand.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/PowerBar.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/AimBar.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/components/FlowBar.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/Main.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/components/SoundPlayer.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/components/Sound.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/components/SoundEffect.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/DartsLauncher.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/components/Sounds.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/components/DartBoard.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/managers/SoundManager.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/components/Hand.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/components/WhiteOut.java" />
+        <option value="$PROJECT_DIR$/src/JustDarts/components/ScoreBoard.java" />
         <option value="$PROJECT_DIR$/src/JustDarts/DartsPanel.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="665" />
-    <option name="y" value="108" />
-    <option name="width" value="2267" />
+    <option name="y" value="106" />
+    <option name="width" value="2268" />
     <option name="height" value="1932" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -277,6 +295,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -308,31 +327,16 @@
               <item name="JustDarts" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="JustDarts" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JustDarts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JustDarts" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="JustDarts" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JustDarts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JustDarts" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="JustDarts" type="462c0819:PsiDirectoryNode" />
               <item name="managers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567394317939" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567453255602" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -372,7 +376,7 @@
     <frame x="-7" y="-7" width="1728" height="1117" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1562123" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15862484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -402,200 +406,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/com/sun/media/sound/DirectAudioDevice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="443" selection-start-line="443" selection-end-line="443" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/sound/sampled/Clip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="141" column="15" selection-start-line="141" selection-start-column="15" selection-end-line="141" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/sound/sampled/DataLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/text/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
-          <folding>
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1307#1308#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/RepaintManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Graphics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="592" column="25" selection-start-line="592" selection-start-column="25" selection-end-line="592" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="150" column="17" lean-forward="true" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="17" />
-          <folding>
-            <element signature="e#10361#10362#0" expanded="true" />
-            <element signature="e#10388#10389#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="3378" column="16" selection-start-line="3378" selection-start-column="16" selection-end-line="3378" selection-end-column="16" />
-          <folding>
-            <element signature="e#29818#29819#0" expanded="true" />
-            <element signature="e#29873#29874#0" expanded="true" />
-            <element signature="e#39524#39525#0" expanded="true" />
-            <element signature="e#39551#39552#0" expanded="true" />
-            <element signature="e#114480#114481#0" expanded="true" />
-            <element signature="e#114527#114528#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/SceneManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/help2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/help.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/RestartButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/QuitButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/bg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/ImageIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="424" selection-start-line="424" selection-end-line="424" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="1219" column="8" selection-start-line="1219" selection-start-column="8" selection-end-line="1219" selection-end-column="8" />
-          <folding>
-            <element signature="e#45507#45508#0" expanded="true" />
-            <element signature="e#45540#45541#0" expanded="true" />
-            <element signature="e#68454#68455#0" expanded="true" />
-            <element signature="e#68483#68484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Wall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="9" selection-end-line="14" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/RenderManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/TutorialButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/InputManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -610,20 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="512" column="32" lean-forward="true" selection-start-line="512" selection-start-column="32" selection-end-line="512" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/WhiteOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,21 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/GameObjectManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1993#1994#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Tutorial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -674,34 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="394" selection-start-line="394" selection-end-line="394" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/interfaces/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/ScoreText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -737,52 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/ScoreBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/BigDartboard.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/ScorePop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/SoundManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Sound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
@@ -797,78 +504,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/DartsLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#DartsLauncher#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Hand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
-            <element signature="e#2267#2268#0" expanded="true" />
-            <element signature="e#2323#2324#0" expanded="true" />
-            <element signature="e#2535#2536#0" expanded="true" />
-            <element signature="e#2588#2589#0" expanded="true" />
-            <element signature="e#2740#2741#0" expanded="true" />
-            <element signature="e#2832#2833#0" expanded="true" />
-            <element signature="e#2914#2915#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/DartBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="97" column="38" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8033#8034#0" expanded="true" />
-            <element signature="e#8065#8066#0" expanded="true" />
-            <element signature="e#8108#8109#0" expanded="true" />
-            <element signature="e#8146#8147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/interfaces/Drawable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/TimeManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JustDarts/components/PowerBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding>
             <element signature="e#1889#1890#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/FlowBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -880,26 +531,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/FlowBar.java">
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/TimeManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="405">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/dart1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/hand1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/hand2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/hand7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/circle.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/BigDartboard.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/restart.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/restart2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/quit.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/help.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/board1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/aimBar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/dart.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/meter_bar_wood.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/aimBarWood.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/img/bg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/ImageIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
+          <folding>
+            <element signature="e#6758#6759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/RenderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JustDarts/DartsPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/SoundEffect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/DartsLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#15637#15885#0" />
-            <element signature="e#16519#17362#0" />
-            <element signature="e#19424#19425#0" expanded="true" />
-            <element signature="e#20639#20701#0" />
+            <element signature="docComment;class#DartsLauncher#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/GameObjectManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#1993#1994#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/SoundPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Sounds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/DartBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="60" column="97" selection-start-line="60" selection-start-column="97" selection-end-line="60" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Sound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/managers/SoundManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/interfaces/Drawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/interfaces/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/Hand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
+            <element signature="e#2740#2741#0" expanded="true" />
+            <element signature="e#2806#2807#0" expanded="true" />
+            <element signature="e#2832#2833#0" expanded="true" />
+            <element signature="e#2887#2888#0" expanded="true" />
+            <element signature="e#2914#2915#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/HiScoreText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/ScoreText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/ScorePop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/ScoreBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/components/WhiteOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1770#1771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JustDarts/DartsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="247" column="33" selection-start-line="247" selection-start-column="33" selection-end-line="247" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

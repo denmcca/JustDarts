@@ -6,6 +6,9 @@
 package JustDarts;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 import javax.swing.*;
 
 /**
@@ -16,7 +19,14 @@ class DartsLauncher {
     /**
     / * @param args the command line arguments
     / */
-    static void dartsMain() {
+    void dartsMain() {
+
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         JFrame dartFrame;
         Toolkit t = Toolkit.getDefaultToolkit();
         Image i = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
@@ -26,7 +36,11 @@ class DartsLauncher {
 //        int scaledWindowHeight = (int)((float)Main.HEIGHT * 640f / (float)Main.WIDTH);
         int windowPositionX = Main.WINDOW_LOCATION.width, windowPositionY = Main.WINDOW_LOCATION.height;
         dartFrame = new JFrame("Darts");
-        dartFrame.setIconImage(new ImageIcon("../img/dart.png").getImage());
+
+        Path path = FileSystems.getDefault().getPath("img","dart.png");
+        dartFrame.setIconImage(new ImageIcon(getClass().getResource("img/dart.png")).getImage());
+//        File file = new File("img/dart.png");
+        System.out.println(path.toString());
         dartFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         dartFrame.setAlwaysOnTop(false);
         dartFrame.setPreferredSize(new Dimension(windowWidth, windowHeight));

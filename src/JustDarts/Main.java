@@ -29,7 +29,8 @@ public class Main extends Applet {
     public static void main(String[] args)
     {
         System.out.println(WIDTH + " " + HEIGHT);
-        DartsLauncher.dartsMain();
+        DartsLauncher dartsLauncher = new DartsLauncher();
+        dartsLauncher.dartsMain();
     }
     
 }

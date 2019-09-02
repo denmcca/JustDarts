@@ -88,6 +88,7 @@ public class DartsPanel extends JPanel
     };
 
     DartsPanel() {
+
         int helpIconX = (width / 9), helpIconY  = (height * 7 / 9);
 
         Drawable.SET_SCALE(IMAGE_SCALE);
@@ -244,10 +245,12 @@ public class DartsPanel extends JPanel
 
         if (endGameFirstPass & endGame) {
             endGameFirstPass = false;
+            updateHighestScore();
             ((Button)getGameObject(GameObjectNames.QUIT)).enableDraw();
             ((Button)getGameObject(GameObjectNames.RESTART)).enableDraw();
             ((Tutorial)getGameObject(GameObjectNames.TUTORIAL)).disableDraw();
-            soundManager.playSound(AudioIndex.GAMEOVER.ordinal());
+//            soundManager.playSound(AudioIndex.GAMEOVER.ordinal());
+            soundManager.setSoundToPlay(Sounds.GAMEOVER.getValue());
             // put white out to the front
             gameObjectManager.add(gameObjectManager.remove(getGameObject(GameObjectNames.WHITE_OUT)));
             gameObjectManager.add(gameObjectManager.remove(getGameObject(GameObjectNames.SCOREBOARD)));
@@ -259,6 +262,7 @@ public class DartsPanel extends JPanel
 
         renderManager.draw();
         if (!endGame) drawAimCircle(g);;
+        soundManager.playSounds();
         gameObjectManager.update();
         inputManager.update();
         repaint();
@@ -388,10 +392,17 @@ public class DartsPanel extends JPanel
         gameObjectManager.add(((Hand)getGameObject(GameObjectNames.PLAYER)).throwDart(dartPos, name));
     }
 
+    private void updateHighestScore() {
+        // updates all time highest score
+        ((WhiteOut)getGameObject(GameObjectNames.WHITE_OUT)).compareHighScore(
+                ((ScoreBoard)getGameObject(GameObjectNames.SCOREBOARD)).getHighScore()
+        );
+    }
+
     private void prepareAudioFiles(String[] audioFilePaths) {
         for (int i = 0; i < audioFilePaths.length; i++) {
-            Clip clip = soundManager.createAudioClip(audioFilePaths[i]);
-            soundManager.addSound(i, clip);
+            SoundEffect sound = new SoundEffect(SoundManager.getInstance().PATH_TO_DIR + audioFilePaths[i]);
+            soundManager.addSound(sound);
         }
     }
 
