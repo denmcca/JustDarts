@@ -5,7 +5,7 @@
  */
 package JustDarts;
 import java.awt.*;
-import java.net.MalformedURLException;
+import java.awt.image.BufferedImage;
 import javax.swing.*;
 
 /**
@@ -13,27 +13,33 @@ import javax.swing.*;
  * @author Dennis
  */
 class DartsLauncher {
-    static JFrame dartFrame;
-    //    static Cursor blank = Toolkit.getDefaultToolkit().createCustomCursor(null, null, "./img/circle.png");
-    
     /**
     / * @param args the command line arguments
     / */
     static void dartsMain() {
+        JFrame dartFrame;
+        Toolkit t = Toolkit.getDefaultToolkit();
+        Image i = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
+        Cursor noCursor = t.createCustomCursor(i, new Point(0, 0), "none");
 //        int IMAGE_SCALE = Main.WIDTH / 640;
         int windowWidth = Main.WIDTH, windowHeight = Main.HEIGHT;
 //        int scaledWindowHeight = (int)((float)Main.HEIGHT * 640f / (float)Main.WIDTH);
         int windowPositionX = Main.WINDOW_LOCATION.width, windowPositionY = Main.WINDOW_LOCATION.height;
         dartFrame = new JFrame("Darts");
-        dartFrame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-        dartFrame.setAlwaysOnTop(true);
+        dartFrame.setIconImage(new ImageIcon("../img/dart.png").getImage());
+        dartFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dartFrame.setAlwaysOnTop(false);
         dartFrame.setPreferredSize(new Dimension(windowWidth, windowHeight));
         dartFrame.setResizable(false);
         dartFrame.setSize(windowWidth, windowHeight);
-//        dartFrame.setCursor(blank);
+//        dartFrame.setCursor(noCursor);
+        dartFrame.setCursor(Cursor.CROSSHAIR_CURSOR);
         dartFrame.setLocation(windowPositionX, windowPositionY);
 //        System.out.print("width = " + (dartFrame.getWidth()) / 2 + " height = " + (Main.dim.height - dartFrame.getHeight()) / 2);
-        dartFrame.getContentPane().add(new DartsPanel());
+        DartsPanel dartsPanel = new DartsPanel();
+        dartsPanel.setFocusable(true);
+        dartsPanel.requestFocusInWindow();
+        dartFrame.getContentPane().add(dartsPanel);
 //        dartFrame.pack();
         dartFrame.setVisible(true);
     }
