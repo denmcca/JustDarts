@@ -1,11 +1,12 @@
-package JustDarts.components;
+package components;
 
 import javax.sound.sampled.*;
-import java.io.File;
+import java.io.BufferedInputStream;
+import java.util.Objects;
 
 public abstract class Sound {
-    protected Clip clip;
-    protected boolean shouldPlay;
+    private Clip clip;
+    private boolean shouldPlay;
     private String path;
 
     public Sound(String path) {
@@ -21,7 +22,9 @@ public abstract class Sound {
     private void createAudioClip(String path)
     {
         try {
-            AudioInputStream ais = AudioSystem.getAudioInputStream(new File(path).getAbsoluteFile());
+            AudioInputStream ais = AudioSystem.getAudioInputStream(
+                    new BufferedInputStream(Objects.requireNonNull(ClassLoader.getSystemResourceAsStream(path)))
+            ); // wrapping Resource Stream in Buffered Input Stream resolves mark/reset error!
             AudioFormat format = ais.getFormat();
             DataLine.Info info = new DataLine.Info(Clip.class, format);
             clip = (Clip)AudioSystem.getLine(info);
@@ -42,6 +45,10 @@ public abstract class Sound {
 
     public boolean shouldPlay() {
         return shouldPlay;
+    }
+
+    public boolean isPlaying() {
+        return clip.isRunning();
     }
 
     public void setShouldPlay(boolean shouldPlay) {
