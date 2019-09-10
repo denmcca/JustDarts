@@ -7,12 +7,12 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-
 import components.*;
 import components.Button;
 import interfaces.Drawable;
 import interfaces.GameObject;
 import managers.*;
+import utils.Logger;
 
 /**
  *
@@ -20,6 +20,7 @@ import managers.*;
  */
 public class DartsPanel extends JPanel
 {
+    private FileManager fileManager;
     private boolean doThrow = false;
     private final int IMAGE_SCALE = Math.round((float)Main.WIDTH/640f);
     private int attemptsMade = 0;
@@ -53,17 +54,13 @@ public class DartsPanel extends JPanel
     }
 
     DartsPanel() {
+        Logger.debugIsOn = true;
+        fileManager = FileManager.getInstance();
+
         final int helpIconX = (width / 9), helpIconY  = (height * 7 / 9);
         Drawable.SET_SCALE(IMAGE_SCALE);
         Drawable.SET_WINDOW_SIZE(width, height);
-        final String[] audioFilePaths = {
-                "tinny_impact.wav",
-                "wooden_impact.wav",
-                "sad_trumbone.wav",
-                "missedDart.wav",
-                "Game_Over_-_Sound_Effect.wav"
-        };
-//        prepareAudioFiles(audioFilePaths);
+
         renderManager.setPanel(this);
 
         Player player = new Player();
@@ -136,6 +133,7 @@ public class DartsPanel extends JPanel
 
         ScoreBoard sb = new ScoreBoard();
         sb.setName(GameObjectNames.SCOREBOARD.toString());
+        sb.setHighScore(Integer.parseInt(loadHighScore()));
         gameObjectManager.add(sb);
 
         // listeners
@@ -249,11 +247,11 @@ public class DartsPanel extends JPanel
             }
         }
 
-
         if (endGameFirstPass & endGame) {
             endGameFirstPass = false;
             toggleCursor();
             updateHighestScore();
+            saveHighScore(Integer.toString(((ScoreBoard)getGameObject(GameObjectNames.SCOREBOARD)).getHighScore()));
             ((Button)getGameObject(GameObjectNames.QUIT)).enableDraw();
             ((Button)getGameObject(GameObjectNames.RESTART)).enableDraw();
             ((Tutorial)getGameObject(GameObjectNames.TUTORIAL)).disableDraw();
@@ -268,6 +266,15 @@ public class DartsPanel extends JPanel
         }
     }
 
+    private void saveHighScore(String highScore) {
+        fileManager.writeData(highScore.getBytes(), "data.hs", false);
+    }
+
+    private String loadHighScore() {
+        String score = new String(fileManager.readData("data.hs"));
+        return score.isEmpty() ? "0" : score;
+    }
+
     // if final attempt is true then set endGame to true
     private void checkIfGameEnds() {
         int attemptCount = 3;
@@ -278,7 +285,6 @@ public class DartsPanel extends JPanel
     }
 
     private void checkIfLeftClick() {
-//        System.out.println(aniMode);
         if (inputManager.wasButtonJustReleased(1)) {
             if (!endGame) {
                 // if click detected on help icon
@@ -290,7 +296,6 @@ public class DartsPanel extends JPanel
                 {
                     // animation mode is HOLD
                     if(aniMode == 1) {// state 2 after first click
-//                        ((AimOscillator)getGameObject(GameObjectNames.AIM)).toggleOscillation(); // turns off oscillation
                         ((Hand)getGameObject(GameObjectNames.HAND)).changeAnimationSequence(Hand.AnimationSequence.HOLD);
                         // power bar to turn on
                         ((PowerBar)getGameObject(GameObjectNames.WOOD_VERT_BAR)).enableDraw();
@@ -333,7 +338,6 @@ public class DartsPanel extends JPanel
                         checkIfGameEnds();
                         if (!endGame) {
                             // switches to IDLE animation
-//                            ((AimOscillator)getGameObject(GameObjectNames.AIM)).toggleOscillation(); // turns on oscillation
                             ((Hand)getGameObject(GameObjectNames.HAND)).changeAnimationSequence(Hand.AnimationSequence.IDLE);
                             aniMode = 1;
                         }
@@ -364,13 +368,6 @@ public class DartsPanel extends JPanel
         ((WhiteOut)getGameObject(GameObjectNames.WHITE_OUT)).compareHighScore(
                 ((ScoreBoard)getGameObject(GameObjectNames.SCOREBOARD)).getHighScore()
         );
-    }
-
-    private void prepareAudioFiles(String[] audioFilePaths) {
-        for (String audioFilePath : audioFilePaths) {
-            SoundEffect sound = new SoundEffect(SoundManager.PATH_TO_DIR + audioFilePath);
-            soundManager.addSound(sound);
-        }
     }
 
     private void calculateDartDeviation() {
@@ -415,16 +412,6 @@ public class DartsPanel extends JPanel
     private void gameQuit() {
         System.exit(0);
     }
-
-//    private double getPlayerScore() { // TODO: store scores
-//        return playerScore;
-//    }
-//
-//    private void highScoreCheck() { // TODO: reinstate high scores
-//        if (playerScore > highScore) {
-//            highScore = playerScore;
-//        }
-//    }
 
     private void toggleCursor() {
         Toolkit t = Toolkit.getDefaultToolkit();

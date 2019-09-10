@@ -55,6 +55,11 @@ public class ScoreBoard extends Drawable {
             highScore = this.score;
     }
 
+    public void setHighScore(int highScore) {
+        if (this.highScore < highScore)
+            this.highScore = highScore;
+    }
+
     public int getHighScore() {
         return highScore;
     }

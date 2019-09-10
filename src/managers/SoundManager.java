@@ -3,15 +3,13 @@ package managers;
 import components.Sound;
 import components.SoundEffect;
 import components.SoundPlayer;
-import utils.Logger;
-
 import javax.sound.sampled.*;
 import java.util.HashMap;
 
 public class SoundManager {
     private static SoundManager instance;
     private HashMap<String, Sound> soundMap;
-    public static final String PATH_TO_DIR = "resources/audio/";
+    private static final String PATH_TO_DIR = "resources/audio/";
     private SoundManager() {
         init();
     }
@@ -25,7 +23,7 @@ public class SoundManager {
         soundMap = new HashMap<>();
     }
 
-    public void addSound(Sound sound) {
+    private void addSound(Sound sound) {
         soundMap.put(sound.getPath(), sound);
     }
 
